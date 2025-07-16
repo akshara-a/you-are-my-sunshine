@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You Are My Sunshine 💛</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="popup1" class="popup active">
+    <h2>Click Sunshine! ☀️</h2>
+    <button onclick="nextPopup('popup2')">Sunshine!</button>
+  </div>
+
+  <div id="popup2" class="popup">
+    <h2>You are my sunshine ☀️</h2>
+    <button onclick="nextPopup('popup3')">Agree</button>
+    <button onclick="nextPopup('popup3', false)">Disagree</button>
+  </div>
+
+  <div id="popup3" class="popup">
+    <h2 id="sunshineResponse"></h2>
+    <button onclick="nextPopup('popup4')">Next</button>
+  </div>
+
+  <div id="popup4" class="popup">
+    <h2>You make me happy, when skies are gray ☁️</h2>
+    <button onclick="nextPopup('popup5')">I know</button>
+  </div>
+
+  <div id="popup5" class="popup">
+    <h2>You never know, dear…</h2>
+    <p>How much I love you ❤️</p>
+    <button onclick="nextPopup('popup6')">I know</button>
+  </div>
+
+  <div id="popup6" class="popup">
+    <h2>Please don’t take my sunshine away 🌙</h2>
+    <button onclick="nextPopup('popup7')">Promise 💖</button>
+  </div>
+
+  <div id="popup7" class="popup">
+    <h2>You are my diamond 💎</h2>
+    <p>You are the best!</p>
+    <button onclick="showFinal()">🎉 Celebrate 🎉</button>
+  </div>
+
+  <div id="final" class="final-message">
+    <h1>💖 You Are My Everything 💖</h1>
+    <p>Thank you for being in my life!</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
